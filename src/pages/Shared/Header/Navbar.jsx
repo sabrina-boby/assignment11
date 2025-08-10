@@ -19,6 +19,7 @@ const Navbar = () => {
       })
       .catch((error) => {
         console.log(error);
+        // An error happened.
       });
   };
   const links = user ? (
