@@ -91,6 +91,14 @@ const Navbar = () => {
       >
         Find tutors
       </NavLink>
+      <NavLink
+        to="/contact-us"
+        className={({ isActive }) =>
+          isActive ? "border-b-3 border-black ml-4 mr-4 font-bold" : "ml-4 mr-4"
+        }
+      >
+        Contact Us
+      </NavLink>
     </>
   );
 
