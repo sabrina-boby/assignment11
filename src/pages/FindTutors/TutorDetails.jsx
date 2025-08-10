@@ -68,7 +68,7 @@ const TutorDetails = () => {
             />
           </div>
           <div className="flex-grow">
-            <h2 className="text-2xl font-bold mb-2">Name: {tutor.name}</h2>
+            <h2 className="text-2xl font-bold mb-2 text-gray-800 dark:text-gray-200">Name: {tutor.name}</h2>
             <p className="text-gray-600 mb-1">Email: {tutor.email}</p>
             <p className="text-gray-600 mb-1">Language: {tutor.language}</p>
             <p className="text-gray-600 mb-1">Price: ${tutor.price} / hr</p>

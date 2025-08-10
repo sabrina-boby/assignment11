@@ -49,35 +49,35 @@ const AddTutorials = () => {
   };
   
   return (
-    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
-      <h1 className="text-2xl font-bold mb-6 text-center">Add Tutorials</h1>
+    <div className="max-w-md mx-auto mt-10 mb-10 p-6 bg-white rounded-lg shadow-lg">
+      <h1 className="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-gray-200">Add Tutorials</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
-        <label className="label">Your Name</label>
+        <label className="label text-gray-800 dark:text-gray-200">Your Name</label>
         <input
           type="text"
           name="name"
-          className="w-full p-2 border border-base-300 rounded"
+          className="w-full p-2 border border-base-300 rounded text-gray-800 dark:text-gray-200"
           // placeholder="Your Name"
           defaultValue={user?.displayName || ""}
           readOnly
           required
         />
 
-        <label className="label">Your Email</label>
+        <label className="label text-gray-800 dark:text-gray-200">Your Email</label>
         <input
           type="email"
           name="email"
-          className="w-full p-2 border border-base-300 rounded"
+          className="w-full p-2 border border-base-300 rounded text-gray-800 dark:text-gray-200"
           defaultValue={user?.email || ""}
           readOnly
           required
         />
 
-        <label className="label">Image URL</label>
+        <label className="label text-gray-800 dark:text-gray-200">Image URL</label>
         <input
           type="text"
           name="image"
-          className="w-full p-2 border border-base-300 rounded"
+          className="w-full p-2 border border-base-300 rounded text-gray-800 dark:text-gray-200"
           placeholder="Image URL"
           required
         />
@@ -92,7 +92,7 @@ const AddTutorials = () => {
             className="select w-full"
             required
           >
-            <option value="" disabled>
+            <option value="" disabled >
               Select a Language
             </option>
             <option>English</option>
@@ -108,19 +108,19 @@ const AddTutorials = () => {
         </fieldset>
 
         {/* =================== */}
-        <label className="label">Price (USD)</label>
+        <label className="label text-gray-800 dark:text-gray-200">Price (USD)</label>
         <input
           type="number"
           name="price"
-          className="w-full p-2 border border-base-300 rounded"
+          className="w-full p-2 border border-base-300 rounded text-gray-800 dark:text-gray-200"
           placeholder="Price (USD)"
           required
         />
 
-        <label className="label">Description</label>
+        <label className="label text-gray-800 dark:text-gray-200">Description</label>
         <textarea
           name="description"
-          className="w-full p-2 border border-base-300 rounded"
+          className="w-full p-2 border border-base-300 rounded text-gray-800 dark:text-gray-200"
           placeholder="Description"
           required
         />

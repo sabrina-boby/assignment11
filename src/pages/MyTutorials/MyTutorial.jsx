@@ -8,12 +8,12 @@ const MyTutorial = ({ myTutorials, refreshTutorials }) => {
         <table className="table-auto max-w-[1200px] w-full border-collapse border border-gray-200">
           <thead className="bg-gray-100">
             <tr>
-              <th className="p-2 border">Image</th>
-              <th className="p-2 border">Language</th>
-              <th className="p-2 border">Price</th>
-              <th className="p-2 border">Description</th>
-              <th className="p-2 border">Review</th>
-              <th className="p-2 border">Actions</th>
+              <th className="p-2 border text-gray-800 dark:text-gray-200">Image</th>
+              <th className="p-2 border text-gray-800 dark:text-gray-200">Language</th>
+              <th className="p-2 border text-gray-800 dark:text-gray-200">Price</th>
+              <th className="p-2 border text-gray-800 dark:text-gray-200">Description</th>
+              <th className="p-2 border text-gray-800 dark:text-gray-200">Review</th>
+              <th className="p-2 border text-gray-800 dark:text-gray-200">Actions</th>
             </tr>
           </thead>
           <tbody>

@@ -31,34 +31,34 @@ const FAQ = () => {
   };
 
   return (
-    <div className='bg-base-200 py-10'>
-    <div className="max-w-4xl mx-auto  px-4">
-      <h2 className="text-3xl font-bold mb-8 text-center">Frequently Asked Questions</h2>
-      <div className="space-y-4">
-        {faqs.map((faq, index) => (
-          <div
-            key={index}
-            className="border rounded-lg bg-gray-50 shadow-sm hover:shadow-md transition"
-          >
-            <button
-              onClick={() => toggleCollapse(index)}
-              className="w-full text-left px-4 py-3 font-semibold flex justify-between items-center"
+    <div className="bg-base-200 dark:bg-gray-900 py-10">
+      <div className="max-w-4xl mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="border rounded-lg bg-gray-50 dark:bg-gray-800 shadow-sm hover:shadow-md transition border-gray-200 dark:border-gray-700"
             >
-              {faq.question}
-              <span className="ml-2">
-                {activeIndex === index ? '▲' : '▼'}
-              </span>
-            </button>
+              <button
+                onClick={() => toggleCollapse(index)}
+                className="w-full text-left px-4 py-3 font-semibold flex justify-between items-center text-gray-900 dark:text-gray-100"
+              >
+                {faq.question}
+                <span className="ml-2">{activeIndex === index ? '▲' : '▼'}</span>
+              </button>
 
-            {activeIndex === index && (
-              <div className="px-4 pb-4 text-gray-600">
-                {faq.answer}
-              </div>
-            )}
-          </div>
-        ))}
+              {activeIndex === index && (
+                <div className="px-4 pb-4 text-gray-600 dark:text-gray-300">
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   );
 };

@@ -48,15 +48,16 @@ const Footer = () => {
     </>
   );
   return (
-    <div className="bg-gray-100">
-      <footer className="footer footer-horizontal footer-center text-base-content rounded p-10">
+    <div className="bg-gray-100 dark:bg-gray-900">
+      <footer className="footer footer-horizontal footer-center text-gray-800 dark:text-gray-200 rounded p-10">
         <div className="logo flex font-extrabold text-2xl">
-          {/* <img className="w-14" src={logo} alt="" /> */}
           <h1>Language Academy</h1>
         </div>
 
-        <nav className="grid grid-flow-col gap-4 ">{links} </nav>
-        <hr className="w-full border-t border-gray-300 " />
+        <nav className="grid grid-flow-col gap-4">
+          {links}
+        </nav>
+        <hr className="w-full border-t border-gray-300 dark:border-gray-700" />
         <nav>
           <div className="grid grid-flow-col gap-4">
             <a
@@ -108,8 +109,7 @@ const Footer = () => {
         </nav>
         <aside>
           <p>
-            Copyright © {new Date().getFullYear()} - All right reserved by
-            Industries Ltd
+            Copyright © {new Date().getFullYear()} - All rights reserved by Industries Ltd
           </p>
         </aside>
       </footer>
